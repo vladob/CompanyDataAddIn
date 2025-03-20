@@ -1,0 +1,291 @@
+{
+  "titleRow": {
+    "backgroundColor": "#0070C0",
+    "font": {
+      "color": "#FFFFFF",
+      "bold": true,
+      "size": 14
+    },
+    "labelEn": "Accounting entity data",
+    "labelSk": "Údaje účtovnej jednotky"
+  },
+  "dataConfig": [
+    {
+      "order": 1,
+      "apiKey": "id",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Identification",
+      "labelSk": "Identifikácia"
+    },
+    {
+      "order": 2,
+      "apiKey": "nazovUJ",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": true,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Company Name",
+      "labelSk": "Názov účtovnej jednotky"
+    },
+    {
+      "order": 3,
+      "apiKey": "ulica",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Street",
+      "labelSk": "Ulica"
+    },
+    {
+      "order": 4,
+      "apiKey": "psc",
+      "dataFormatting": "000\\ 00",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Postal Code",
+      "labelSk": "PSČ"
+    },
+    {
+      "order": 5,
+      "apiKey": "mesto",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "City",
+      "labelSk": "Mesto"
+    },
+    {
+      "order": 6,
+      "apiKey": "sidlo",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Address",
+      "labelSk": "Sídlo",
+	  "lookupDictionary": "Muncipalities"
+    },
+    {
+      "order": 7,
+      "apiKey": "okres",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "District",
+      "labelSk": "Okres",
+	  "lookupDictionary": "Distincts"
+    },
+    {
+      "order": 8,
+      "apiKey": "kraj",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Region",
+      "labelSk": "Kraj",
+	  "lookupDictionary": "Regions"
+    },
+    {
+      "order": 9,
+      "apiKey": "ico",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": true,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Company ID",
+      "labelSk": "IČO"
+    },
+    {
+      "order": 10,
+      "apiKey": "dic",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Tax ID",
+      "labelSk": "DIČ"
+    },
+    {
+      "order": 11,
+      "apiKey": "pravnaForma",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Legal Form",
+      "labelSk": "Pravna Forma",
+	  "lookupDictionary": "LegalForms"
+    },
+    {
+      "order": 12,
+      "apiKey": "velkostOrganizacie",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Organization size",
+      "labelSk": "Velkost Organizacie",
+	  "lookupDictionary": "OrganizationSizes"
+    },
+    {
+      "order": 13,
+      "apiKey": "skNace",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "skNace",
+      "labelSk": "skNace",
+	  "lookupDictionary": "SkNace"
+    },
+    {
+      "order": 14,
+      "apiKey": "druhVlastnictva",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Ownership",
+      "labelSk": "Druh Vlastnictva",
+	  "lookupDictionary": "OwnershipTypes"
+    },
+    {
+      "order": 15,
+      "apiKey": "datumZalozenia",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Established",
+      "labelSk": "Založena"
+    },
+    {
+      "order": 16,
+      "apiKey": "konsolidovana",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Consolidated",
+      "labelSk": "Konsolidovana"
+    },
+    {
+      "order": 17,
+      "apiKey": "zdrojDat",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Data source",
+      "labelSk": "Zdroj dat"
+    },
+    {
+      "order": 17,
+      "apiKey": "datumPoslednejUpravy",
+      "dataFormatting": "text",
+      "font": {
+        "name": "Calibri",
+        "size": 11,
+        "bold": false,
+        "italic": false,
+        "color": "#000000"
+      },
+      "backgroundColor": "#FFFFFF",
+      "labelEn": "Last change",
+      "labelSk": "Posledna Uprava"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+	"klasifikacie": [
+		{"kod": "0","nazov": {"en": "Not ascertained yet","sk": "Zatia¾ nezistené"}},
+		{"kod": "1","nazov": {"en": "Internatonial-public","sk": "Medzinárodné - verejné"}},
+		{"kod": "2","nazov": {"en": "Private inland","sk": "Súkromné tuzemské"}},
+		{"kod": "3","nazov": {"en": "Cooperative-owned","sk": "Družstevné"}},
+		{"kod": "4","nazov": {"en": "State-owned","sk": "Štátne"}},
+		{"kod": "5","nazov": {"en": "Municipality-owned","sk": "Vlast.územnej samosprávy"}},
+		{"kod": "6","nazov": {"en": "Ownership of associat.","sk": "Združ.,p.strany,cirkvi"}},
+		{"kod": "7","nazov": {"en": "Foreign","sk": "Zahranièné"}},
+		{"kod": "8","nazov": {"en": "International-private","sk": "Medzinárodné - súkromné"}},
+		{"kod": "9","nazov": {"en": "Mixed","sk": "Zmiešané"}}
+	]
+}
