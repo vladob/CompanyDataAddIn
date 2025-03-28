@@ -1,4 +1,4 @@
-using Microsoft.Office.Tools.Ribbon;
+﻿using Microsoft.Office.Tools.Ribbon;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +24,7 @@ namespace CompanyDataAddIn
             }
             else
             {
-                MessageBox.Show("Please enter a valid CIN (I�O).");
+                MessageBox.Show("Please enter a valid CIN (IČO).");
             }
         }
     }

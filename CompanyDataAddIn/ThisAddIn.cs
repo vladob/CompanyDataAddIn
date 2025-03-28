@@ -26,6 +26,7 @@ namespace CompanyDataAddIn
         private CompanyDataRibbon ribbon;
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         private static ClassificationManager classificationManager;
+        private List<String> financialStatements = new List<string>();
         private Config config;
 
 
@@ -83,6 +84,16 @@ namespace CompanyDataAddIn
 
                 // Step 3: Insert data into Excel
                 InsertDataIntoExcel(entityData);
+
+
+                // Step 4: Get financial statements
+                JObject financialStetementData = await GetFinancialStatementData(financialStatements[0]);
+                if (financialStetementData == null)
+                {
+                    MessageBox.Show("Failed to fetch financial statement data, for id: ");
+                    return;
+                }
+
             }
             catch (Exception ex)
             {
@@ -101,6 +112,13 @@ namespace CompanyDataAddIn
         private async Task<JObject> GetAccountingEntityData(string entityId)
         {
             string url = $"https://www.registeruz.sk/cruz-public/api/uctovna-jednotka?id={entityId}";
+            string response = await httpClient.GetStringAsync(url);
+            return JObject.Parse(response);
+        }
+
+        private async Task<JObject> GetFinancialStatementData(string statementId)
+        {
+            string url = $"https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id={statementId}";
             string response = await httpClient.GetStringAsync(url);
             return JObject.Parse(response);
         }
@@ -161,6 +179,17 @@ namespace CompanyDataAddIn
 
                     row++;
                 }
+            }
+            if (data.ContainsKey("idUctovnychZavierok"))
+            {
+                var financialStatementIds = data["idUctovnychZavierok"].ToList();
+                financialStatements.Clear();
+
+                foreach (var fsItem in financialStatementIds)
+                {
+                    financialStatements.Add(fsItem.ToString());
+                }
+
             }
 
             // Format data cells
